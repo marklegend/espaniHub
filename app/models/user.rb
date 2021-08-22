@@ -8,9 +8,12 @@
 #  confirmation_token     :string
 #  confirmed_at           :datetime
 #  email                  :string           default(""), not null
+#  employer               :boolean
 #  encrypted_password     :string           default(""), not null
 #  first_name             :string
+#  freelancer             :boolean
 #  last_name              :string
+#  moderator              :boolean
 #  remember_created_at    :datetime
 #  reset_password_sent_at :datetime
 #  reset_password_token   :string
@@ -26,6 +29,7 @@
 class User < ApplicationRecord
   include SimpleDiscussion::ForumUser
   has_person_name
+  has_many :jobs, dependent: :destroy 
 
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable

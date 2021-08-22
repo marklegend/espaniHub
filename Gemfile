@@ -19,7 +19,6 @@ gem 'sidekiq', '~> 6.2', '>= 6.2.1'
 gem 'name_of_person', '~> 1.1', '>= 1.1.1'
 gem 'vite_rails', '~> 2.0', '>= 2.0.9'
 gem 'image_processing', '~> 1.2'
-gem 'pg', '~> 1.1'
 gem "inline_svg", "~> 1.7"
 gem "pagy", "~> 3.8"
 gem "simple_discussion", "~> 1.2"

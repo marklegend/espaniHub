@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '2.7.2'
+ruby '3.0.0'
 
 gem 'rails', '~> 6.0', '>= 6.0.3.4'
 
@@ -15,7 +15,7 @@ gem 'pg', '>= 0.18', '< 2.0'
 gem 'turbolinks', '~> 5'
 gem 'webpacker', '~> 4.0'
 
-# railsdevs.com custom gems
+#  espanihub custom gems
 gem 'devise', '~> 4.7', '>= 4.7.2'
 gem 'friendly_id', '~> 5.3'
 gem 'name_of_person', '~> 1.1', '>= 1.1.1'
@@ -23,7 +23,7 @@ gem 'sidekiq', '~> 6.1', '>= 6.1.1'
 gem "inline_svg", "~> 1.7"
 gem "pagy", "~> 3.8"
 gem "pay", "~> 2.1"
-gem "simple_discussion", "~> 1.2"
+gem "simple_discussion", "~> 1.3"
 gem "stripe_event", "~> 2.3"
 gem "stripe", "~> 5.22"
 gem 'whenever', '~> 1.0'

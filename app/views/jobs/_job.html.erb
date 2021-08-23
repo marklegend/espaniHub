@@ -22,7 +22,7 @@
       <% if job.compensation_type.downcase == "contract" %>
         <%= job.estimated_hours %> hours
       <% else %>
-        <%= number_to_currency(job.compensation_range) %> <span class="px-px text-gray-600">&bull;</span> <%= pluralize(job.years_of_experience, 'year') %> of experience
+        <%= number_to_currency(job.compensation_range , :unit => "R") %> <span class="px-px text-gray-600">&bull;</span> <%= pluralize(job.years_of_experience, 'year') %> of experience
       <% end %>
     </p>
     <p class="text-sm leading-tight text-gray-700">

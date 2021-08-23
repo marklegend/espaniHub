@@ -61,7 +61,7 @@ export const actions = {
   formattedPrice() {
     const price = new Intl.NumberFormat("en-EN", {
       style: "currency",
-      currency: "USD",
+      currency: "ZAR",
     }).format(store.form.job.price)
     return price
   },

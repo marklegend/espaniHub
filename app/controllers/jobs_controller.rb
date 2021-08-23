@@ -77,7 +77,7 @@ class JobsController < ApplicationController
 
     @intent = Stripe::PaymentIntent.create({
       amount: intent_amount,
-      currency: "usd",
+      currency: "zar",
       payment_method_types: ["card"]
     })
 
